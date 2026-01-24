@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Terminal } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import TerminalModal from './TerminalModal';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -21,9 +22,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="font-mono text-xl tracking-tight flex items-center gap-3 group cursor-pointer select-none">
           {/* Logo Icon */}
-          <div className="relative w-5 h-5 border border-white flex items-center justify-center overflow-hidden">
-              <div className="w-full h-[1px] bg-white rotate-45 group-hover:rotate-180 transition-transform duration-500"></div>
-          </div>
+          <Logo className="w-1 h-1" />
           <span className="font-bold">PRINCIPIA LABS</span>
         </Link>
         

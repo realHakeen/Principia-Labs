@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500">
+  <!-- Content Group: Centered roughly -->
+  <!-- Estimated Total Width: ~1100px -->
+  <!-- X Offset: (1500 - 1100) / 2 = 200 -->
+  <!-- Y Offset: (500 - 204) / 2 = 148 -->
+  
+  <g transform="translate(200, 148)">
+    <!-- Logo P: Scaled 3x (36px blocks, 6px gaps) -->
+    <!-- Total Size: 120w x 204h -->
+    <g>
+       <!-- Row 1 -->
+      <rect x="0" y="0" width="36" height="36" fill="white"/>
+      <rect x="42" y="0" width="36" height="36" fill="white"/>
+      <rect x="84" y="0" width="36" height="36" fill="white"/>
+      
+      <!-- Row 2 -->
+      <rect x="0" y="42" width="36" height="36" fill="white"/>
+      <rect x="84" y="42" width="36" height="36" fill="white"/>
+      
+      <!-- Row 3 -->
+      <rect x="0" y="84" width="36" height="36" fill="white"/>
+      <rect x="42" y="84" width="36" height="36" fill="white"/>
+      <rect x="84" y="84" width="36" height="36" fill="white"/>
+      
+      <!-- Row 4 -->
+      <rect x="0" y="126" width="36" height="36" fill="white"/>
+      
+      <!-- Row 5 -->
+      <rect x="0" y="168" width="36" height="36" fill="white"/>
+    </g>
+    
+    <!-- Text -->
+    <!-- Offset X: 120 (Logo) + 80 (Gap) = 200 -->
+    <!-- Font Size: 100 -->
+    <!-- Vertically centered relative to Logo (Height 204). Mid=102. -->
+    <!-- Text baseline approx +35 -->
+    <text x="200" y="140" fill="white" font-family="monospace" font-weight="bold" font-size="100" letter-spacing="6">PRINCIPIA LABS</text>
+  </g>
+</svg>
+

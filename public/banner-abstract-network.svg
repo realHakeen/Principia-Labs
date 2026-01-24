@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500">
+  <rect width="1500" height="500" fill="black"/>
+  
+  <!-- Connections -->
+  <line x1="200" y1="250" x2="500" y2="150" stroke="white" stroke-width="2" opacity="0.2"/>
+  <line x1="500" y1="150" x2="800" y2="250" stroke="white" stroke-width="2" opacity="0.2"/>
+  <line x1="800" y1="250" x2="1100" y2="150" stroke="white" stroke-width="2" opacity="0.2"/>
+  <line x1="1100" y1="150" x2="1300" y2="300" stroke="white" stroke-width="2" opacity="0.2"/>
+  
+  <line x1="500" y1="150" x2="500" y2="350" stroke="white" stroke-width="2" opacity="0.2"/>
+  <line x1="800" y1="250" x2="800" y2="400" stroke="white" stroke-width="2" opacity="0.2"/>
+  
+  <!-- Nodes (Squares) -->
+  <g>
+    <!-- Node 1 -->
+    <rect x="180" y="230" width="40" height="40" fill="white" opacity="0.8"/>
+    
+    <!-- Node 2 -->
+    <rect x="480" y="130" width="40" height="40" fill="white" opacity="0.6"/>
+    
+    <!-- Node 3 -->
+    <rect x="780" y="230" width="40" height="40" fill="white" opacity="0.9"/>
+    
+    <!-- Node 4 -->
+    <rect x="1080" y="130" width="40" height="40" fill="white" opacity="0.7"/>
+    
+    <!-- Node 5 -->
+    <rect x="1280" y="280" width="40" height="40" fill="white" opacity="0.5"/>
+    
+    <!-- Node 6 -->
+    <rect x="480" y="330" width="40" height="40" fill="white" opacity="0.4"/>
+    
+    <!-- Node 7 -->
+    <rect x="780" y="380" width="40" height="40" fill="white" opacity="0.3"/>
+  </g>
+  
+  <!-- Small particles on lines -->
+  <rect x="350" y="200" width="10" height="10" fill="white" opacity="0.9"/>
+  <rect x="650" y="200" width="10" height="10" fill="white" opacity="0.9"/>
+  <rect x="950" y="200" width="10" height="10" fill="white" opacity="0.9"/>
+</svg>
+
+

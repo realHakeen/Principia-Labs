@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
@@ -7,8 +8,8 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="col-span-1 md:col-span-2">
-            <div className="text-white text-lg font-bold mb-4 flex items-center gap-2">
-              <div className="w-2 h-2 bg-white"></div>
+            <div className="text-white text-lg font-bold mb-4 flex items-center gap-2 group">
+              <Logo className="w-0.5 h-0.5" />
               PRINCIPIA LABS
             </div>
             <p className="max-w-xs mb-6 leading-relaxed">

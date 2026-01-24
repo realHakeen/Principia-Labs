@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500">
+  <rect width="1500" height="500" fill="black"/>
+  
+  <defs>
+    <!-- A 100x100 pattern tile that repeats -->
+    <pattern id="modular-grid" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <!-- Opacity varies to create depth -->
+      <rect x="10" y="10" width="20" height="20" fill="white" opacity="0.1"/>
+      <rect x="40" y="10" width="20" height="20" fill="white" opacity="0.05"/>
+      <rect x="70" y="40" width="20" height="20" fill="white" opacity="0.15"/>
+      <rect x="10" y="70" width="20" height="20" fill="white" opacity="0.05"/>
+      <rect x="70" y="70" width="20" height="20" fill="white" opacity="0.1"/>
+    </pattern>
+    
+    <!-- A gradient mask to fade edges -->
+    <linearGradient id="fade-mask" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="black"/>
+      <stop offset="20%" stop-color="white"/>
+      <stop offset="80%" stop-color="white"/>
+      <stop offset="100%" stop-color="black"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Pattern -->
+  <rect width="1500" height="500" fill="url(#modular-grid)" mask="url(#fade-mask)"/>
+  
+  <!-- Overlay: A few brighter "active" nodes -->
+  <rect x="300" y="200" width="20" height="20" fill="white"/>
+  <rect x="330" y="200" width="20" height="20" fill="white"/>
+  
+  <rect x="700" y="100" width="20" height="20" fill="white"/>
+  <rect x="700" y="130" width="20" height="20" fill="white"/>
+  <rect x="730" y="130" width="20" height="20" fill="white"/>
+  
+  <rect x="1100" y="300" width="20" height="20" fill="white"/>
+  <rect x="1130" y="330" width="20" height="20" fill="white"/>
+</svg>
+
