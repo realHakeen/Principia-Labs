@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import ParticleBackground from './ParticleBackground';
 import useScrambleText from '../hooks/useScrambleText';
+import TerminalModal from './TerminalModal';
 
 const HeroSection = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const titleLine1 = useScrambleText("Accelerating the capital", isHovered);
   const titleLine2 = useScrambleText("Into Crypto", isHovered);
 
@@ -34,8 +36,11 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col gap-4 w-full md:w-auto">
-               <button className="bg-white text-black px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-neutral-300 transition-all flex items-center justify-center gap-3 w-full md:w-auto">
-                Read The Thesis <ArrowRight size={14} />
+               <button 
+                 onClick={() => setIsModalOpen(true)}
+                 className="bg-white text-black px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-neutral-300 transition-all flex items-center justify-center gap-3 w-full md:w-auto"
+               >
+                Connect <ArrowRight size={14} />
               </button>
                <span className="text-[10px] text-neutral-600 font-mono text-center md:text-left">
                  LATEST BLOCK: #18293402
@@ -44,6 +49,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      <TerminalModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30 animate-pulse">
@@ -55,4 +62,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
