@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom cursor - hide default on desktop */
+@media (min-width: 768px) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom selection color is handled by Tailwind classes */
+
