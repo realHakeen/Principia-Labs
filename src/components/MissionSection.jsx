@@ -18,7 +18,7 @@ const MissionSection = () => {
              </div>
              <div>
                 <strong className="text-white block mb-2">[02] ECOSYSTEM ARCHITECTS</strong>
-                We move beyond passive investment. We design tokenomics, bootstrap liquidity, and advise on governance structures.
+                Moving beyond passive investment, we drive liquidity, shape market dynamics, and consult on token governance frameworks.
              </div>
           </div>
         </div>
