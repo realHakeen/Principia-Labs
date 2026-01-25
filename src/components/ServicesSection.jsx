@@ -39,7 +39,7 @@ const ServicesSection = () => {
             icon={Globe}
             status="active"
             badge="Strategic Unit"
-            description="End-to-end listing advisory and strategic consulting for Web2 enterprises entering the Web3 ecosystem." 
+            description="End-to-end listing advisory and strategic consulting for startups entering the Web3 ecosystem." 
           />
 
           {/* 4. RATING (Future) */}
@@ -62,11 +62,11 @@ const ServicesSection = () => {
 
           {/* 3. CURATOR (Future) */}
           <ServiceCard 
-            title="Curator DAO" 
+            title="Curator" 
             icon={Shield}
             status="locked"
             badge="Phase II"
-            description="A decentralized collective for vetting and listing high-quality assets, setting the standard for industry transparency." 
+            description="Marketing and community management for high-quality assets." 
           />
         </div>
       </div>
