@@ -30,8 +30,8 @@ const Footer = () => {
           <div>
               <h4 className="text-white mb-4">CONNECT</h4>
               <ul className="space-y-2">
-                  <li><a href="#" className="hover:text-white">Twitter / X</a></li>
-                  <li><a href="#" className="hover:text-white">LinkedIn</a></li>
+                  <li><a href="https://x.com/Principia_Labs" className="hover:text-white">X / Twitter / X</a></li>
+                  <li><a href="https://www.linkedin.com/company/principia-labs-io" className="hover:text-white">LinkedIn</a></li>
                   <li><a href="#" className="hover:text-white">Telegram</a></li>
               </ul>
           </div>
