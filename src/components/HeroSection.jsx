@@ -38,7 +38,7 @@ const HeroSection = () => {
             <div className="flex flex-col gap-4 w-full md:w-auto">
                <button 
                  onClick={() => setIsModalOpen(true)}
-                 className="bg-white text-black px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-neutral-300 transition-all flex items-center justify-center gap-3 w-full md:w-auto"
+                 className="bg-stripes-dark text-white border border-[#DFFF00] px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-neutral-900 transition-all flex items-center justify-center gap-3 w-full md:w-auto"
                >
                 Connect <ArrowRight size={14} />
               </button>
