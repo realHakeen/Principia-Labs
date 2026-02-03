@@ -59,11 +59,11 @@ const ResearchLogs = ({ limit }) => {
                     {item.title}
                   </h3>
                   {item.tags && item.tags.length > 0 && (
-                     <span className="mt-2 md:mt-0 text-[10px] border border-neutral-800 px-2 py-1 uppercase tracking-wider text-neutral-500 group-hover:border-white group-hover:text-white transition-colors">
+                     <span className="mt-2 md:mt-0 text-[10px] border border-neutral-800 px-2 py-1 uppercase tracking-wider text-neutral-500 group-hover:border-[#DFFF00] group-hover:text-[#DFFF00] transition-colors">
                         {item.tags[0]}
                      </span>
                   )}
-                  <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-white transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top"></div>
+                  <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#DFFF00] transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top"></div>
                 </div>
               </Link>
             ))
