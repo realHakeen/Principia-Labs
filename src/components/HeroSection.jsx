@@ -17,7 +17,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 relative z-10 pt-20">
         <div className="max-w-5xl mx-auto text-center md:text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 border border-neutral-800 rounded-none text-[10px] font-mono text-neutral-400 mb-8 bg-black">
-            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            <span className="w-2 h-2 bg-[#DFFF00] rounded-full animate-pulse"></span>
             SYSTEM STATUS: RESEARCH INTELLIGENCE ONLINE
           </div>
           
