@@ -69,14 +69,24 @@ const Navbar = () => {
           </Link>
         </div>
         
-        {/* Desktop Connect Button */}
-        <button 
-          onClick={() => setIsModalOpen(true)}
-          className="hidden md:flex items-center gap-2 border border-neutral-700 px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
-        >
-          <Terminal size={12} />
-          Connect
-        </button>
+        {/* Desktop: Listscope + Connect */}
+        <div className="hidden md:flex items-center gap-4">
+          <a
+            href="https://listscope.principialabs.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center border border-neutral-700 px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
+          >
+            Listscope
+          </a>
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="flex items-center gap-2 border border-neutral-700 px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
+          >
+            <Terminal size={12} />
+            Connect
+          </button>
+        </div>
 
         {/* Mobile Menu Toggle */}
         <button 
@@ -94,7 +104,15 @@ const Navbar = () => {
           <Link to="/research" onClick={closeMobileMenu} className="hover:text-white transition-colors">Research</Link>
           <Link to="/" onClick={closeMobileMenu} className="hover:text-white transition-colors">Ecosystem</Link>
           <Link to="/" onClick={closeMobileMenu} className="hover:text-white transition-colors">Careers</Link>
-          
+          <a
+            href="https://listscope.principialabs.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMobileMenu}
+            className="hover:text-white transition-colors"
+          >
+            Listscope
+          </a>
           <button 
             onClick={openModal}
             className="flex items-center gap-2 border border-neutral-700 px-6 py-3 mt-4 text-white hover:bg-white hover:text-black transition-colors"
