@@ -91,14 +91,14 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <button 
           onClick={toggleMobileMenu}
-          className="md:hidden text-white p-2 focus:outline-none"
+          className="md:hidden text-white p-2 focus:outline-none relative z-[70]"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 z-40 bg-black flex flex-col items-center justify-center transition-all duration-300 md:hidden ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}>
+      <div className={`fixed inset-0 z-[60] bg-black flex flex-col items-center justify-center transition-all duration-300 md:hidden ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}>
         <div className="flex flex-col items-center gap-8 text-sm font-bold uppercase tracking-widest text-neutral-400">
           <Link to="/" onClick={closeMobileMenu} className="hover:text-white transition-colors">Manifesto</Link>
           <Link to="/research" onClick={closeMobileMenu} className="hover:text-white transition-colors">Research</Link>
