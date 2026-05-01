@@ -97,29 +97,43 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 z-[60] bg-black flex flex-col items-center justify-center transition-all duration-300 md:hidden ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}>
-        <div className="flex flex-col items-center gap-8 text-sm font-bold uppercase tracking-widest text-neutral-400">
-          <Link to="/" onClick={closeMobileMenu} className="hover:text-white transition-colors">Manifesto</Link>
-          <Link to="/research" onClick={closeMobileMenu} className="hover:text-white transition-colors">Research</Link>
-          <Link to="/" onClick={closeMobileMenu} className="hover:text-white transition-colors">Ecosystem</Link>
-          <Link to="/" onClick={closeMobileMenu} className="hover:text-white transition-colors">Careers</Link>
-          <a
-            href="https://listscope.principialabs.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={closeMobileMenu}
-            className="hover:text-white transition-colors"
-          >
-            Listscope
-          </a>
-          <button 
-            onClick={openModal}
-            className="flex items-center gap-2 border border-neutral-700 px-6 py-3 mt-4 text-white hover:bg-white hover:text-black transition-colors"
-          >
-            <Terminal size={14} />
-            Connect
-          </button>
+      {/* Mobile Dropdown Menu */}
+      <div
+        className={`fixed inset-0 z-[60] md:hidden transition-all duration-200 ${
+          isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
+        }`}
+      >
+        <button
+          onClick={closeMobileMenu}
+          aria-label="Close mobile menu"
+          className="absolute inset-0 w-full h-full bg-black/40"
+        />
+
+        <div className="container mx-auto px-6 relative">
+          <div className="absolute right-0 mt-2 w-64 border border-neutral-800 bg-black/95 backdrop-blur-md shadow-2xl">
+            <div className="flex flex-col gap-5 p-5 text-xs font-bold uppercase tracking-widest text-neutral-400">
+              <Link to="/" onClick={closeMobileMenu} className="hover:text-white transition-colors">Manifesto</Link>
+              <Link to="/research" onClick={closeMobileMenu} className="hover:text-white transition-colors">Research</Link>
+              <Link to="/" onClick={closeMobileMenu} className="hover:text-white transition-colors">Ecosystem</Link>
+              <Link to="/" onClick={closeMobileMenu} className="hover:text-white transition-colors">Careers</Link>
+              <a
+                href="https://listscope.principialabs.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeMobileMenu}
+                className="hover:text-white transition-colors"
+              >
+                Listscope
+              </a>
+              <button
+                onClick={openModal}
+                className="flex items-center justify-center gap-2 border border-neutral-700 px-4 py-2 mt-1 text-white hover:bg-white hover:text-black transition-colors"
+              >
+                <Terminal size={14} />
+                Connect
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 

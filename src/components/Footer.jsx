@@ -32,7 +32,7 @@ const Footer = () => {
               <ul className="space-y-2">
                   <li><a href="https://x.com/PrincipiaLabs_" className="hover:text-white">X / Twitter</a></li>
                   <li><a href="https://www.linkedin.com/company/principia-labs-io" className="hover:text-white">LinkedIn</a></li>
-                  <li><a href="#" className="hover:text-white">Telegram</a></li>
+                  <li><a href="https://t.me/Principia_Research" className="hover:text-white">Telegram</a></li>
               </ul>
           </div>
         </div>
